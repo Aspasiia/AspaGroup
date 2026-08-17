@@ -1,0 +1,33 @@
+name: AspaGroup
+version: '1.1.0'
+main: com.aspa.aspagroup.AspaGroup
+api-version: '1.21.11'
+author: Aspa
+
+description: A group management plugin for Paper servers
+
+commands:
+  group:
+    description: Main group command
+    usage: /group <subcommand>
+    aliases: [g]
+
+permissions:
+  aspagroup.create:
+    description: Allows creating groups
+    default: true
+  aspagroup.join:
+    description: Allows joining groups
+    default: true
+  aspagroup.admin:
+    description: Administrative permissions for groups
+    default: op
+  aspagroup.claim:
+    description: Allows claiming chunks for groups
+    default: true
+  aspagroup.claim.unlimited:
+    description: Bypass chunk claiming limits
+    default: op
+  aspagroup.hud:
+    description: Allows using the chunk HUD display
+    default: true

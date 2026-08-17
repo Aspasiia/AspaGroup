@@ -1,0 +1,10 @@
+# AspaGroup - Chunk Claims Storage
+# This file stores all chunk claims in the format:
+# world:chunkX:chunkZ: groupName
+#
+# Example:
+# world:10:20: RedTeam
+# world_nether:-5:15: BlueSquad
+#
+# This file is automatically managed by the plugin.
+# Manual edits may be overwritten.

@@ -1,0 +1,21 @@
+# Maven
+target/
+dependency-reduced-pom.xml
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Plugin runtime data (generated on the server, never commit)
+hud-preferences.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Notes de dev locales
+CLAUDE.md

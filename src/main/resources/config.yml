@@ -1,0 +1,61 @@
+# Configuration du Plugin AspaGroup
+
+# Paramètres des demandes d'adhésion
+join-request-expire-minutes: 10
+
+# Paramètres des groupes
+max-group-size: 10
+max-groups-per-server: 50
+
+# Paramètres de revendication de chunks
+max-claims-per-group: 20  # Nombre maximum de chunks qu'un groupe peut revendiquer
+enable-chunk-hud: true    # Activer l'affichage HUD des territoires
+hud-update-cooldown-ms: 100  # Délai minimum entre les mises à jour HUD (millisecondes)
+hud-refresh-interval-ticks: 40  # Intervalle de rafraîchissement HUD pour maintenir l'affichage (40 = 2 secondes)
+allow-claim-overlap: false   # Permettre plusieurs groupes sur le même chunk (non implémenté)
+
+# Messages
+messages:
+  prefix: "&7[&bAspaGroup&7]&r "
+  group-created: "&aGroupe '%group%' créé avec succès !"
+  group-deleted: "&cGroupe '%group%' supprimé !"
+  group-not-found: "&cGroupe '%group%' introuvable !"
+  already-in-group: "&cVous êtes déjà dans un groupe !"
+  not-in-group: "&cVous n'êtes dans aucun groupe !"
+  no-permission: "&cVous n'avez pas la permission de faire cela !"
+  player-not-found: "&cJoueur introuvable !"
+  join-request-sent: "&aDemande d'adhésion envoyée au groupe '%group%' !"
+  join-request-accepted: "&a%player% a rejoint le groupe !"
+  join-request-denied: "&cLa demande d'adhésion de %player% a été refusée !"
+  description-set: "&aDescription du groupe mise à jour !"
+  only-owner: "&cSeul le propriétaire peut faire cela !"
+  admin-group-deleted: "&aGroupe '%group%' supprimé par un administrateur !"
+  admin-no-permission: "&cCommande réservée aux administrateurs !"
+  group-chat-format: "&7[&aChat Groupe&7] %color%[%group%] %player%&f: %message%"
+  group-chat-empty: "&cVous devez écrire un message ! Usage: /group chat <message>"
+  group-full: "&cLe groupe '%group%' est plein ! (Maximum %max% membres)"
+
+  # Messages pour le mode chat de groupe
+  chat-mode-enabled: "&aMode chat de groupe activé ! Tous vos messages iront uniquement au groupe '%group%'."
+  chat-mode-disabled: "&aMode chat global activé ! Vos messages sont maintenant visibles par tous."
+  chat-mode-no-group: "&cVous devez être dans un groupe pour utiliser le mode chat de groupe !"
+  chat-mode-not-in-group: "&cVous n'êtes dans aucun groupe ! Utilisez /group togglechat pour revenir au chat global."
+
+  # Messages pour le système de revendication de chunks
+  chunk-claimed: "&aChunk revendiqué avec succès pour le groupe '%group%' !"
+  chunk-unclaimed: "&aChunk abandonné avec succès !"
+  chunk-already-claimed: "&cCe chunk est déjà revendiqué par le groupe '%group%' !"
+  chunk-claimed-by-other: "&cCe chunk est déjà revendiqué par un autre groupe !"
+  chunk-not-claimed: "&cCe chunk n'est revendiqué par aucun groupe !"
+  chunk-limit-reached: "&cVotre groupe a atteint la limite de %max% chunks revendiqués !"
+  chunk-wilderness: "&7Terre sauvage"
+  chunk-zone-prefix: "&eZone: "
+  chunk-hud-enabled: "&aHUD des chunks activé !"
+  chunk-hud-disabled: "&cHUD des chunks désactivé !"
+  chunk-no-permission: "&cVous n'avez pas la permission de revendiquer des chunks !"
+  chunk-hud-no-permission: "&cVous n'avez pas la permission d'utiliser le HUD !"
+
+  # Messages pour les commandes administratives
+  admin-chunk-unclaimed: "&aChunk forcé à l'abandon ! (%world% %x%,%z%) était revendiqué par '%group%'"
+  admin-chunk-not-claimed: "&cCe chunk n'est revendiqué par aucun groupe !"
+  admin-chunks-cleaned: "&aNettoyage terminé ! %count% chunks orphelins supprimés"
